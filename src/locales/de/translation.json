@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Start",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "Software Engineer":"Software-Engineering"  
+},
+  "hero": {
+    "hello": "Hallo, ich bin",
+    "title": "Mohamed Rayen Chati",
+    "subtitle": "Software-Engineering-Student",
+    "description": "Ich entwickle moderne Webanwendungen und arbeite gern mit React, Java, C++ und SQL. Willkommen auf meiner persönlichen Portfolio-Website."
+  },
+  "buttons": {
+    "hireMe": "Kontakt",
+    "viewProjects": "Projekte ansehen",
+    "contactMe": "Kontaktiere mich",
+    "language": "Sprache",
+    "downloadCv": "CV herunterladen"
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Ich bin Informatikstudent an der FH Aachen mit Schwerpunkt auf Frontend-Entwicklung. Ich entwickle moderne, responsive und benutzerfreundliche Oberflächen und lege dabei großen Wert auf Performance und sauberes Design. Ich arbeite hauptsächlich mit React, JavaScript und CSS und verbessere kontinuierlich meine Fähigkeiten, um hochwertige Benutzererfahrungen zu schaffen.",
+    "study": "Informatikstudent an der FH Aachen",
+    "projects": "Ich arbeite an verschiedenen modernen Softwareprojekten.",
+    "goals": "Mein Ziel ist es, ein starker Full-Stack-Entwickler zu werden.",
+    "languagesTitle": "Sprachen",
+    "hobbiesTitle": "Hobbys",
+    "languages": {
+      "arabic": "🇹🇳 Arabisch",
+      "french": "🇫🇷 Französisch",
+      "english": "🇬🇧 Englisch",
+      "german": "🇩🇪 Deutsch"
+    },
+    "levels": {
+      "native": "Muttersprache",
+      "fluent": "Fließend",
+      "intermediate": "Mittelstufe"
+    },
+    "hobbies": {
+      "gaming": "Gaming",
+      "music": "Musik",
+      "football": "Fußball",
+      "coding": "Programmieren",
+      "movies": "Filme"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "Software Engineer":"Software Engineer"  
+  },
+  "hero": {
+    "hello": "Hello, I'm",
+    "title": " Mohamed Rayen Chati",
+    "subtitle": "Software Engineering Student",
+    "description": "I build modern web applications and I enjoy working with React, Java, C++ and SQL. Welcome to my personal portfolio website."
+  },
+
+  
+  "buttons": {
+  "hireMe": "Hire Me",
+  "viewProjects": "View Projects",
+  "contactMe": "Contact Me",
+  "language": "Language",
+  "downloadCv": "Download CV"
+},
+"about": {
+    "title": "About Me",
+    "description": "I am an Informatics student at FH Aachen with a strong focus on frontend development. I enjoy building modern, responsive, and user-friendly interfaces, with attention to performance and clean design. I work mainly with React, JavaScript, and CSS, and I am continuously improving my skills to create intuitive and high-quality user experiences.",
+    "study": "Informatics student at FH Aachen",
+    "projects": "I work on different modern software projects.",
+    "goals": "My goal is to become a strong full-stack developer.",
+    "languagesTitle": "Languages",
+    "hobbiesTitle": "Hobbies",
+    "languages": {
+      "arabic": "🇹🇳 Arabic",
+      "french": "🇫🇷 French",
+      "english": "🇬🇧 English",
+      "german": "🇩🇪 German"
+    },
+    "levels": {
+      "native": "Native",
+      "fluent": "Fluent",
+      "intermediate": "Intermediate"
+    },
+    "hobbies": {
+      "gaming": "Gaming",
+      "music": "Music",
+      "football": "Football",
+      "coding": "Coding",
+      "movies": "Movies"
+    }
+  }
+}
