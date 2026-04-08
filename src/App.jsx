@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import { TypeAnimation } from "react-type-animation";
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import bg from "./assets/bg.jpg";
 import {
   FaGamepad,
   FaMusic,
@@ -134,16 +135,16 @@ function App() {
           <p className="hero-description">{t("hero.description")}</p>
 
           <div className="hero-buttons">
-            <a href="#projects" className="hero-btn hero-btn-primary">
-              Projekte ansehen
+            <a href="#projects" className="hero-btn hero-btn-primary">{t("buttons.viewProjects")}
+             
             </a>
 
-            <a href="#contact" className="hero-btn hero-btn-outline">
-              Kontaktiere mich
+            <a href="#contact" className="hero-btn hero-btn-outline">{t("buttons.contactMe")}
+             
             </a>
 
-            <a href="/cv.pdf" download className="hero-btn hero-btn-dark">
-              ⬇ CV herunterladen
+            <a href="/cv.pdf" download className="hero-btn hero-btn-dark">{t("buttons.downloadCv")}
+              ⬇ 
             </a>
           </div>
         </div>
@@ -244,30 +245,34 @@ function App() {
   </div>
 </div>
       </section>
+ <section
+  id="skills"
+  className="skills-section"
+  style={{ backgroundImage: `url(${bg})` }}
+>
+  <div className="skills-overlay">
+    <div className="skills-section-header">
+      <p className="skills-subtitle">Technologies I work with</p>
+      <h2 className="skills-main-title">My Skills</h2>
+      <div className="skills-main-divider"></div>
+    </div>
 
-      {/* SKILLS */}
-      <section id="skills" className="skills-section">
-        <div className="skills-section-header">
-          <p className="skills-subtitle">Technologies I work with</p>
-          <h2 className="skills-main-title">My Skills</h2>
-          <div className="skills-main-divider"></div>
+    <div className="skills-showcase-grid">
+      {skills.map((skill, index) => (
+        <div
+          className="skill-orb"
+          key={index}
+          style={{ "--skill-color": skill.color }}
+        >
+          <div className="skill-orb-inner">
+            <span className="skill-icon">{skill.icon}</span>
+          </div>
+          <p className="skill-name">{skill.name}</p>
         </div>
-
-        <div className="skills-showcase-grid">
-          {skills.map((skill, index) => (
-            <div
-              className="skill-orb"
-              key={index}
-              style={{ "--skill-color": skill.color }}
-            >
-              <div className="skill-orb-inner">
-                <span className="skill-icon">{skill.icon}</span>
-              </div>
-              <p className="skill-name">{skill.name}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
     </div>
   );
 }

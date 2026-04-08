@@ -244,10 +244,6 @@ body {
 }
 
 /* ========================= SKILLS TITLE ========================= */
-.skills-section {
-  padding: 110px 56px;
-  position: relative;
-}
 
 .skills-section-header {
   text-align: center;
@@ -337,7 +333,22 @@ body {
     0 0 0 1px rgba(255,255,255,0.03),
     0 0 24px color-mix(in srgb, var(--skill-color) 20%, transparent);
 }
+.skills-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 110px 56px;
 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 .skill-orb-inner {
   width: var(--size);
   height: var(--size);
@@ -467,10 +478,7 @@ body {
 
   .hero-section,
   .about-section,
-  .skills-section {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
+  
 
   .hero-title {
     font-size: 48px;
@@ -497,10 +505,7 @@ body {
     font-size: 38px;
   }
 
-  .skills-section {
-    padding-top: 85px;
-    padding-bottom: 85px;
-  }
+  
 
   .skills-subtitle {
     font-size: 16px;
