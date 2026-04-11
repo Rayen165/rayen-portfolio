@@ -2,27 +2,25 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "work": "Work",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact",
-    "Software Engineer":"Software Engineer"  
+    "contact": "Contact"
   },
   "hero": {
     "hello": "Hello, I'm",
-    "title": " Mohamed Rayen Chati",
+    "title": "Mohamed Rayen Chati",
     "subtitle": "Software Engineering Student",
     "description": "I build modern web applications and I enjoy working with React, Java, C++ and SQL. Welcome to my personal portfolio website."
   },
-
-  
   "buttons": {
-  "hireMe": "Hire Me",
-  "viewProjects": "View Projects",
-  "contactMe": "Contact Me",
-  "language": "Language",
-  "downloadCv": "Download CV"
-},
-"about": {
+    "hireMe": "Hire Me",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me",
+    "language": "Language",
+    "downloadCv": "Download CV"
+  },
+  "about": {
     "title": "About Me",
     "description": "I am an Informatics student at FH Aachen with a strong focus on frontend development. I enjoy building modern, responsive, and user-friendly interfaces, with attention to performance and clean design. I work mainly with React, JavaScript, and CSS, and I am continuously improving my skills to create intuitive and high-quality user experiences.",
     "study": "Informatics student at FH Aachen",
@@ -48,5 +46,90 @@
       "coding": "Coding",
       "movies": "Movies"
     }
+  },
+  "skills": {
+    "subtitle": "Technologies I work with",
+    "title": "My Skills"
+  },
+  "projectsSection": {
+    "label": "PORTFOLIO",
+    "title": "Featured Projects",
+    "live": "Live",
+    "liveDemo": "Live Demo",
+    "viewCode": "View Code",
+    "items": {
+      "school": {
+        "title": "School Learning Platform",
+        "alt": "School Learning Platform",
+        "description": "A collaborative school web platform where teachers can upload exercises and courses, while students can access all their study materials in one place. The project was developed in a team with 2 frontend members and 4 backend members."
+      },
+      "emensa": {
+        "title": "E-Mensa Website",
+        "alt": "E-Mensa Website",
+        "description": "A web application for e-mensa services developed with HTML, CSS and MariaDB. The project focused on building a clean user interface and managing data efficiently through a database-driven structure."
+      },
+      "todo": {
+        "title": "To-Do List Web App",
+        "alt": "To-Do List Web App",
+        "description": "A React-based task management web application that allows users to add, organize, and manage daily tasks through a modern and interactive interface with a clean frontend experience."
+      }
+    }
+  },
+  "experience": {
+    "subtitle": "WHAT I HAVE DONE SO FAR",
+    "title": "Work Experience.",
+    "items": {
+      "algorithms": {
+        "title": "Algorithms and Graph Theory in C++",
+        "place": "FH Aachen",
+        "date": "2023",
+        "point1": "Implemented several TSP algorithms such as Nearest Neighbor, Double Tree, and Kruskal in C++.",
+        "point2": "Developed automated tests with Catch2 to ensure correctness and performance."
+      },
+      "bank": {
+        "title": "Java Banking Management System",
+        "place": "FH Aachen",
+        "date": "2024",
+        "point1": "Developed an object-oriented banking management system in Java with class hierarchy, inheritance, and error handling.",
+        "point2": "Focused on encapsulation, clean code structure, and maintainable software architecture."
+      },
+      "servicenow": {
+        "title": "ServiceNow Parking App",
+        "place": "FH Aachen",
+        "date": "2025",
+        "point1": "Developed a campus application for managing parking spaces with roles, ACLs, and flows.",
+        "point2": "Implemented user-friendly interfaces using UI Builder."
+      },
+      "webapp": {
+        "title": "Web App with HTML, CSS, PHP and MariaDB",
+        "place": "Academic Project",
+        "date": "2025",
+        "point1": "Built an interactive web application with frontend in HTML, CSS, and JavaScript.",
+        "point2": "Integrated backend using PHP and MariaDB, including SQL queries and form processing."
+      },
+      "linux": {
+        "title": "Linux Administration and Virtualization",
+        "place": "Academic Project",
+        "date": "2026",
+        "point1": "Set up and administered virtual Linux environments with Ubuntu and Debian.",
+        "point2": "Deepened knowledge in Vagrant, VirtualBox, shell scripting, and networking fundamentals."
+      },
+      "todo": {
+        "title": "To-Do List Web App (Vanilla JavaScript)",
+        "place": "Personal / Academic Project",
+        "date": "2026",
+        "point1": "Developed a dynamic To-Do List web application using HTML5, CSS3, and JavaScript.",
+        "point2": "Implemented DOM manipulation, event handling, and interactive UI features."
+      }
+    }
+  },
+  "contact": {
+    "label": "CONTACT",
+    "title": "Let's Work Together",
+    "remote": "Available remotely",
+    "name": "Name",
+    "email": "Email",
+    "message": "Your message...",
+    "send": "Send"
   }
 }

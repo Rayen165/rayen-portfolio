@@ -2,15 +2,14 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
+    "work": "Expérience",
     "skills": "Compétences",
     "projects": "Projets",
-    "contact": "Contact",
-    "Software Engineer":"Software-Engineering"  
-
+    "contact": "Contact"
   },
   "hero": {
     "hello": "Bonjour, je suis",
-    "title": " Mohamed Rayen Chati",
+    "title": "Mohamed Rayen Chati",
     "subtitle": "Étudiant en génie logiciel",
     "description": "Je développe des applications web modernes et jaime travailler avec React, Java, C++ et SQL. Bienvenue sur mon portfolio personnel."
   },
@@ -24,7 +23,6 @@
   "about": {
     "title": "À propos de moi",
     "description": "Je suis étudiant en informatique à la FH Aachen avec un fort intérêt pour le développement frontend. J’aime concevoir des interfaces modernes, responsives et intuitives, tout en accordant une grande importance à la performance et à la qualité du design. Je travaille principalement avec React, JavaScript et CSS, et je cherche constamment à améliorer mes compétences pour créer des expériences utilisateur de qualité.",
-   
     "study": "Étudiant en informatique à FH Aachen",
     "projects": "Je travaille sur différents projets logiciels modernes.",
     "goals": "Mon objectif est de devenir un développeur full-stack solide.",
@@ -48,5 +46,90 @@
       "coding": "Codage",
       "movies": "Films"
     }
+  },
+  "skills": {
+    "subtitle": "Technologies avec lesquelles je travaille",
+    "title": "Mes compétences"
+  },
+  "projectsSection": {
+    "label": "PORTFOLIO",
+    "title": "Projets en vedette",
+    "live": "Live",
+    "liveDemo": "Démo Live",
+    "viewCode": "Voir le code",
+    "items": {
+      "school": {
+        "title": "Plateforme d’apprentissage scolaire",
+        "alt": "Plateforme d’apprentissage scolaire",
+        "description": "Une plateforme web collaborative où les enseignants peuvent publier des exercices et des cours, tandis que les étudiants peuvent accéder à tous leurs supports d’étude au même endroit. Le projet a été développé en équipe avec 2 membres au frontend et 4 membres au backend."
+      },
+      "emensa": {
+        "title": "Site web E-Mensa",
+        "alt": "Site web E-Mensa",
+        "description": "Une application web de services e-mensa développée avec HTML, CSS et MariaDB. Le projet s’est concentré sur la création d’une interface propre et la gestion efficace des données à travers une structure basée sur une base de données."
+      },
+      "todo": {
+        "title": "Application Web To-Do List",
+        "alt": "Application Web To-Do List",
+        "description": "Une application web de gestion des tâches développée avec React, permettant aux utilisateurs d’ajouter, d’organiser et de gérer leurs tâches quotidiennes à travers une interface moderne et interactive avec une expérience frontend propre."
+      }
+    }
+  },
+  "experience": {
+    "subtitle": "CE QUE J’AI FAIT JUSQU’À PRÉSENT",
+    "title": "Expérience.",
+    "items": {
+      "algorithms": {
+        "title": "Algorithmes et théorie des graphes en C++",
+        "place": "FH Aachen",
+        "date": "2023",
+        "point1": "Implémentation de plusieurs algorithmes TSP comme Nearest Neighbor, Double Tree et Kruskal en C++.",
+        "point2": "Développement de tests automatisés avec Catch2 pour garantir la correction et la performance."
+      },
+      "bank": {
+        "title": "Système bancaire en Java",
+        "place": "FH Aachen",
+        "date": "2024",
+        "point1": "Développement d’un système bancaire orienté objet en Java avec hiérarchie de classes, héritage et gestion des erreurs.",
+        "point2": "Accent mis sur l’encapsulation, une structure de code propre et une architecture maintenable."
+      },
+      "servicenow": {
+        "title": "Application Parking ServiceNow",
+        "place": "FH Aachen",
+        "date": "2025",
+        "point1": "Développement d’une application de campus pour la gestion des places de parking avec rôles, ACL et flows.",
+        "point2": "Mise en œuvre d’interfaces conviviales avec le UI Builder."
+      },
+      "webapp": {
+        "title": "Application web avec HTML, CSS, PHP et MariaDB",
+        "place": "Projet académique",
+        "date": "2025",
+        "point1": "Développement d’une application web interactive avec frontend en HTML, CSS et JavaScript.",
+        "point2": "Intégration backend avec PHP et MariaDB, y compris les requêtes SQL et le traitement des formulaires."
+      },
+      "linux": {
+        "title": "Administration Linux et virtualisation",
+        "place": "Projet académique",
+        "date": "2026",
+        "point1": "Mise en place et administration d’environnements Linux virtuels avec Ubuntu et Debian.",
+        "point2": "Approfondissement de Vagrant, VirtualBox, du shell scripting et des bases réseau."
+      },
+      "todo": {
+        "title": "Site web To-Do List ",
+        "place": "Projet personnel / académique",
+        "date": "2026",
+        "point1": "Développement d’une application To-Do List dynamique avec HTML5, CSS3 et JavaScript.",
+        "point2": "Utilisation de la manipulation du DOM, de la gestion des événements et d’interactions UI dynamiques."
+      }
+    }
+  },
+  "contact": {
+    "label": "CONTACT",
+    "title": "Travaillons ensemble",
+    "remote": "Disponible à distance",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Votre message...",
+    "send": "Envoyer"
   }
 }

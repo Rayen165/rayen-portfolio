@@ -2,11 +2,11 @@
   "nav": {
     "home": "Start",
     "about": "Über mich",
-    "skills": "Fähigkeiten",
+    "work": "Erfahrung",
+    "skills": "Skills",
     "projects": "Projekte",
-    "contact": "Kontakt",
-    "Software Engineer":"Software-Engineering"  
-},
+    "contact": "Kontakt"
+  },
   "hero": {
     "hello": "Hallo, ich bin",
     "title": "Mohamed Rayen Chati",
@@ -46,5 +46,90 @@
       "coding": "Programmieren",
       "movies": "Filme"
     }
+  },
+  "skills": {
+    "subtitle": "Technologien, mit denen ich arbeite",
+    "title": "Meine Skills"
+  },
+  "projectsSection": {
+    "label": "PORTFOLIO",
+    "title": "Ausgewählte Projekte",
+    "live": "Live",
+    "liveDemo": "Live-Demo",
+    "viewCode": "Code ansehen",
+    "items": {
+      "school": {
+        "title": "Schulische Lernplattform",
+        "alt": "Schulische Lernplattform",
+        "description": "Eine kollaborative Schul-Webplattform, auf der Lehrkräfte Übungen und Kurse hochladen können, während Schülerinnen und Schüler alle ihre Lernmaterialien an einem Ort finden. Das Projekt wurde im Team mit 2 Frontend-Mitgliedern und 4 Backend-Mitgliedern entwickelt."
+      },
+      "emensa": {
+        "title": "E-Mensa Website",
+        "alt": "E-Mensa Website",
+        "description": "Eine Webanwendung für E-Mensa-Dienste, entwickelt mit HTML, CSS und MariaDB. Der Fokus lag auf einer sauberen Benutzeroberfläche und einer effizienten Datenverwaltung durch eine datenbankgestützte Struktur."
+      },
+      "todo": {
+        "title": "To-Do-List Web App",
+        "alt": "To-Do-List Web App",
+        "description": "Eine mit React entwickelte Aufgabenverwaltungs-Webanwendung, mit der Benutzer tägliche Aufgaben über eine moderne und interaktive Oberfläche hinzufügen, organisieren und verwalten können."
+      }
+    }
+  },
+  "experience": {
+    "subtitle": "WAS ICH BISHER GEMACHT HABE",
+    "title": "Erfahrung.",
+    "items": {
+      "algorithms": {
+        "title": "Algorithmen und Graphentheorie in C++",
+        "place": "FH Aachen",
+        "date": "2023",
+        "point1": "Implementierung mehrerer TSP-Algorithmen wie Nearest Neighbor, Double Tree und Kruskal in C++.",
+        "point2": "Entwicklung automatisierter Tests mit Catch2 zur Sicherstellung von Korrektheit und Performance."
+      },
+      "bank": {
+        "title": "Java-Bankverwaltungssystem",
+        "place": "FH Aachen",
+        "date": "2024",
+        "point1": "Entwicklung eines objektorientierten Bankverwaltungssystems in Java mit Klassenhierarchie, Vererbung und Fehlerbehandlung.",
+        "point2": "Fokus auf Kapselung, sauberer Code-Struktur und wartbarer Softwarearchitektur."
+      },
+      "servicenow": {
+        "title": "ServiceNow Parking App",
+        "place": "FH Aachen",
+        "date": "2025",
+        "point1": "Entwicklung einer Campus-Anwendung zur Verwaltung von Parkplätzen mit Rollen, ACLs und Flows.",
+        "point2": "Umsetzung benutzerfreundlicher Oberflächen mit dem UI Builder."
+      },
+      "webapp": {
+        "title": "Web-App mit HTML, CSS, PHP und MariaDB",
+        "place": "Akademisches Projekt",
+        "date": "2025",
+        "point1": "Entwicklung einer interaktiven Webanwendung mit Frontend in HTML, CSS und JavaScript.",
+        "point2": "Backend-Anbindung mit PHP und MariaDB inklusive SQL-Abfragen und Formularverarbeitung."
+      },
+      "linux": {
+        "title": "Linux-Verwaltung und Virtualisierung",
+        "place": "Akademisches Projekt",
+        "date": "2026",
+        "point1": "Aufbau und Administration virtueller Linux-Umgebungen mit Ubuntu und Debian.",
+        "point2": "Vertiefung in Vagrant, VirtualBox, Shell-Skripting und Netzwerkgrundlagen."
+      },
+      "todo": {
+        "title": "To-Do-List Website",
+        "place": "Persönliches / Akademisches Projekt",
+        "date": "2026",
+        "point1": "Entwicklung einer dynamischen To-Do-Listen-Webanwendung mit HTML5, CSS3 und JavaScript.",
+        "point2": "Umsetzung von DOM-Manipulation, Event-Handling und interaktiven UI-Funktionen."
+      }
+    }
+  },
+  "contact": {
+    "label": "KONTAKT",
+    "title": "Lass uns zusammenarbeiten",
+    "remote": "Remote verfügbar",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Deine Nachricht...",
+    "send": "Senden"
   }
 }

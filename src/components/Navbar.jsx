@@ -9,8 +9,13 @@ const Navbar = () => {
   const navItems = [
     { key: "home", link: "#home" },
     { key: "about", link: "#about" },
+
+    
+    
+
     { key: "skills", link: "#skills" },
     { key: "projects", link: "#projects" },
+    { key: "work", link: "#experience" },
     { key: "contact", link: "#contact" },
   ];
 
@@ -31,7 +36,11 @@ const Navbar = () => {
             key={item.key}
             href={item.link}
             onClick={() => setActiveSection(item.key)}
-            className={activeSection === item.key ? "nav-link active" : "nav-link"}
+            className={
+              activeSection === item.key
+                ? "nav-link active"
+                : "nav-link"
+            }
           >
             {t(`nav.${item.key}`)}
           </a>
@@ -39,27 +48,24 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-actions">
-  <button className="hire-btn">
-    {t("buttons.hireMe")}
-  </button>
+       
+        <div className="language-wrapper">
+          <button
+            className="lang-btn"
+            onClick={() => setShowLanguages(!showLanguages)}
+          >
+            🌐 {t("buttons.language")}
+          </button>
 
-  <div className="language-wrapper">
-    <button
-      className="lang-btn"
-      onClick={() => setShowLanguages(!showLanguages)}
-    >
-      🌐 {t("buttons.language")}
-    </button>
-
-    {showLanguages && (
-      <div className="language-menu">
-        <div onClick={() => changeLanguage("en")}>English</div>
-        <div onClick={() => changeLanguage("fr")}>Français</div>
-        <div onClick={() => changeLanguage("de")}>Deutsch</div>
+          {showLanguages && (
+            <div className="language-menu">
+              <div onClick={() => changeLanguage("en")}>English</div>
+              <div onClick={() => changeLanguage("fr")}>Français</div>
+              <div onClick={() => changeLanguage("de")}>Deutsch</div>
+            </div>
+          )}
+        </div>
       </div>
-    )}
-  </div>
-</div>
     </nav>
   );
 };

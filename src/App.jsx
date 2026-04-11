@@ -3,7 +3,9 @@ import { TypeAnimation } from "react-type-animation";
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import bg from "./assets/bg.jpg";
-import { FiExternalLink } from "react-icons/fi";
+import schoolImg from "./assets/project-school.png";
+import parkingImg from "./assets/project-parking.png";
+import todoImg from "./assets/project-todo.png";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import {
@@ -31,6 +33,7 @@ import {
   SiMysql,
   SiCplusplus,
   SiLinux,
+  
 } from "react-icons/si";
 
 import workspace from "./assets/workspace.png";
@@ -41,28 +44,23 @@ function App() {
   const form = useRef();
 
   const sendEmail = (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  emailjs
-    .sendForm(
-      "service_yqtq0ml",
-      "template_lq4b1h9",
-      form.current,
-      {
+    emailjs
+      .sendForm("service_yqtq0ml", "template_lq4b1h9", form.current, {
         publicKey: "cmdph8t4BFMmacerJ",
-      }
-    )
-    .then(
-      () => {
-        alert("Message envoyé ✅");
-        form.current.reset();
-      },
-      (error) => {
-        console.log("FAILED...", error);
-        alert(`Erreur ❌ ${error?.text || "Vérifie la console"}`);
-      }
-    );
-};
+      })
+      .then(
+        () => {
+          alert("Message envoyé ✅");
+          form.current.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          alert(`Erreur ❌ ${error?.text || "Vérifie la console"}`);
+        }
+      );
+  };
 
   const getSequence = () => {
     if (i18n.language === "fr") {
@@ -126,7 +124,11 @@ function App() {
       <section id="home" className="hero-section">
         <div className="hero-left">
           <div className="social-icons">
-            <a href="https://github.com/Rayen165" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/Rayen165"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
 
@@ -140,7 +142,7 @@ function App() {
           </div>
 
           <p className="hero-greeting">{t("hero.hello")}</p>
-          <h1 className="hero-title">Rayen Chati</h1>
+          <h1 className="hero-title">{t("hero.title")}</h1>
 
           <div className="hero-divider" />
 
@@ -187,8 +189,12 @@ function App() {
               <div className="languages-list">
                 <div className="language-item">
                   <div className="language-row">
-                    <span className="language-name">{t("about.languages.arabic")}</span>
-                    <span className="language-level-text">{t("about.levels.native")}</span>
+                    <span className="language-name">
+                      {t("about.languages.arabic")}
+                    </span>
+                    <span className="language-level-text">
+                      {t("about.levels.native")}
+                    </span>
                   </div>
                   <div className="language-bar">
                     <div className="language-fill fill-arabic"></div>
@@ -197,8 +203,12 @@ function App() {
 
                 <div className="language-item">
                   <div className="language-row">
-                    <span className="language-name">{t("about.languages.german")}</span>
-                    <span className="language-level-text">{t("about.levels.fluent")}</span>
+                    <span className="language-name">
+                      {t("about.languages.german")}
+                    </span>
+                    <span className="language-level-text">
+                      {t("about.levels.fluent")}
+                    </span>
                   </div>
                   <div className="language-bar">
                     <div className="language-fill fill-french"></div>
@@ -207,8 +217,12 @@ function App() {
 
                 <div className="language-item">
                   <div className="language-row">
-                    <span className="language-name">{t("about.languages.french")}</span>
-                    <span className="language-level-text">{t("about.levels.fluent")}</span>
+                    <span className="language-name">
+                      {t("about.languages.french")}
+                    </span>
+                    <span className="language-level-text">
+                      {t("about.levels.fluent")}
+                    </span>
                   </div>
                   <div className="language-bar">
                     <div className="language-fill fill-english"></div>
@@ -217,8 +231,12 @@ function App() {
 
                 <div className="language-item">
                   <div className="language-row">
-                    <span className="language-name">{t("about.languages.english")}</span>
-                    <span className="language-level-text">{t("about.levels.intermediate")}</span>
+                    <span className="language-name">
+                      {t("about.languages.english")}
+                    </span>
+                    <span className="language-level-text">
+                      {t("about.levels.intermediate")}
+                    </span>
                   </div>
                   <div className="language-bar">
                     <div className="language-fill fill-german"></div>
@@ -273,8 +291,8 @@ function App() {
       >
         <div className="skills-overlay">
           <div className="skills-section-header">
-            <p className="skills-subtitle">Technologies I work with</p>
-            <h2 className="skills-main-title">My Skills</h2>
+            <p className="skills-subtitle">{t("skills.subtitle")}</p>
+            <h2 className="skills-main-title">{t("skills.title")}</h2>
             <div className="skills-main-divider"></div>
           </div>
 
@@ -295,88 +313,294 @@ function App() {
         </div>
       </section>
 
-      <section id="projects" className="projects-section">
-        <div className="projects-header">
-          <p className="projects-label">PORTFOLIO</p>
-          <h2 className="projects-title">Projets récents</h2>
+     <section id="projects" className="premium-projects-section">
+  <div className="premium-projects-header">
+    <p className="premium-projects-label">{t("projectsSection.label")}</p>
+    <h2 className="premium-projects-title">{t("projectsSection.title")}</h2>
+  </div>
+
+  <div className="premium-projects-grid">
+    {/* PROJECT 1 */}
+    <article className="premium-project-card">
+      <div className="premium-project-image-wrap">
+        <img
+          src={schoolImg}
+          alt={t("projectsSection.items.school.alt")}
+          className="premium-project-image"
+        />
+
+        <div className="premium-project-top-actions">
+          <a
+            href="#"
+            className="premium-project-float-btn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t("projectsSection.live")}
+          </a>
+
+          <a
+            href="#"
+            className="premium-project-icon-btn"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithub />
+          </a>
+        </div>
+      </div>
+
+      <div className="premium-project-content">
+        <h3>{t("projectsSection.items.school.title")}</h3>
+
+        <p>{t("projectsSection.items.school.description")}</p>
+
+        <div className="premium-project-tags">
+          <span className="tag-blue">#HTML</span>
+          <span className="tag-white">#CSS</span>
+          <span className="tag-green">#JavaScript</span>
+          <span className="tag-orange">#Teamwork</span>
         </div>
 
-        <div className="projects-list">
-          <article className="project-item">
-            <h3>E-Commerce Platform</h3>
-            <p>
-              Application full-stack avec React, Node.js et PostgreSQL.
-              Authentification, panier et paiement intégrés.
-            </p>
+        <div className="premium-project-buttons">
+          <a href="#" target="_blank" rel="noreferrer" className="btn-live">
+            {t("projectsSection.liveDemo")}
+          </a>
+          <a href="#" target="_blank" rel="noreferrer" className="btn-code">
+            {t("projectsSection.viewCode")}
+          </a>
+        </div>
+      </div>
+    </article>
 
-            <div className="project-tags">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>PostgreSQL</span>
+    {/* PROJECT 2 */}
+    <article className="premium-project-card">
+      <div className="premium-project-image-wrap">
+        <img
+          src={parkingImg}
+          alt={t("projectsSection.items.emensa.alt")}
+          className="premium-project-image"
+        />
+
+        <div className="premium-project-top-actions">
+          <a
+            href="#"
+            className="premium-project-float-btn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t("projectsSection.live")}
+          </a>
+
+          <a
+            href="#"
+            className="premium-project-icon-btn"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithub />
+          </a>
+        </div>
+      </div>
+
+      <div className="premium-project-content">
+        <h3>{t("projectsSection.items.emensa.title")}</h3>
+
+        <p>{t("projectsSection.items.emensa.description")}</p>
+
+        <div className="premium-project-tags">
+          <span className="tag-blue">#HTML</span>
+          <span className="tag-white">#CSS</span>
+          <span className="tag-green">#MariaDB</span>
+          <span className="tag-orange">#WebApp</span>
+        </div>
+
+        <div className="premium-project-buttons">
+          <a href="#" target="_blank" rel="noreferrer" className="btn-live">
+            {t("projectsSection.liveDemo")}
+          </a>
+          <a href="#" target="_blank" rel="noreferrer" className="btn-code">
+            {t("projectsSection.viewCode")}
+          </a>
+        </div>
+      </div>
+    </article>
+
+    {/* PROJECT 3 */}
+    <article className="premium-project-card">
+      <div className="premium-project-image-wrap">
+        <img
+          src={todoImg}
+          alt={t("projectsSection.items.todo.alt")}
+          className="premium-project-image"
+        />
+
+        <div className="premium-project-top-actions">
+          <a
+            href="#"
+            className="premium-project-float-btn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t("projectsSection.live")}
+          </a>
+
+          <a
+            href="#"
+            className="premium-project-icon-btn"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithub />
+          </a>
+        </div>
+      </div>
+
+      <div className="premium-project-content">
+        <h3>{t("projectsSection.items.todo.title")}</h3>
+
+        <p>{t("projectsSection.items.todo.description")}</p>
+
+        <div className="premium-project-tags">
+          <span className="tag-blue">#React</span>
+          <span className="tag-white">#CSS</span>
+          <span className="tag-green">#JavaScript</span>
+          <span className="tag-orange">#Frontend</span>
+        </div>
+
+        <div className="premium-project-buttons">
+          <a href="#" target="_blank" rel="noreferrer" className="btn-live">
+            {t("projectsSection.liveDemo")}
+          </a>
+          <a href="#" target="_blank" rel="noreferrer" className="btn-code">
+            {t("projectsSection.viewCode")}
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+      <section id="experience" className="experience-section">
+        <div className="experience-header">
+          <p className="experience-subtitle">{t("experience.subtitle")}</p>
+          <h2 className="experience-title">{t("experience.title")}</h2>
+        </div>
+
+        <div className="timeline-wrapper">
+          <div className="timeline-line"></div>
+
+          <div className="timeline-row left">
+            <div className="timeline-card">
+              <h3>{t("experience.items.algorithms.title")}</h3>
+              <h4>{t("experience.items.algorithms.place")}</h4>
+              <ul>
+                <li>{t("experience.items.algorithms.point1")}</li>
+                <li>{t("experience.items.algorithms.point2")}</li>
+              </ul>
             </div>
 
-            <div className="project-links">
-              <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
-                <FaGithub />
-              </a>
-              <a href="#" target="_blank" rel="noreferrer" aria-label="Live Demo">
-                <FiExternalLink />
-              </a>
-            </div>
-          </article>
-
-          <article className="project-item">
-            <h3>Task Manager App</h3>
-            <p>
-              Application de gestion de tâches avec drag &amp; drop,
-              filtres et notifications en temps réel.
-            </p>
-
-            <div className="project-tags">
-              <span>TypeScript</span>
-              <span>React</span>
-              <span>Firebase</span>
+            <div className="timeline-center">
+              <div className="timeline-circle"></div>
             </div>
 
-            <div className="project-links">
-              <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
-                <FaGithub />
-              </a>
-              <a href="#" target="_blank" rel="noreferrer" aria-label="Live Demo">
-                <FiExternalLink />
-              </a>
+            <div className="timeline-date">
+              {t("experience.items.algorithms.date")}
             </div>
-          </article>
+          </div>
 
-          <article className="project-item">
-            <h3>Algorithm Visualizer</h3>
-            <p>
-              Visualisation interactive d'algorithmes de tri et de recherche
-              en C++ et JavaScript.
-            </p>
-
-            <div className="project-tags">
-              <span>C++</span>
-              <span>JavaScript</span>
-              <span>Canvas API</span>
+          <div className="timeline-row right">
+            <div className="timeline-date">
+              {t("experience.items.bank.date")}
             </div>
 
-            <div className="project-links">
-              <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
-                <FaGithub />
-              </a>
-              <a href="#" target="_blank" rel="noreferrer" aria-label="Live Demo">
-                <FiExternalLink />
-              </a>
+            <div className="timeline-center">
+              <div className="timeline-circle"></div>
             </div>
-          </article>
+
+            <div className="timeline-card">
+              <h3>{t("experience.items.bank.title")}</h3>
+              <h4>{t("experience.items.bank.place")}</h4>
+              <ul>
+                <li>{t("experience.items.bank.point1")}</li>
+                <li>{t("experience.items.bank.point2")}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="timeline-row left">
+            <div className="timeline-card">
+              <h3>{t("experience.items.servicenow.title")}</h3>
+              <h4>{t("experience.items.servicenow.place")}</h4>
+              <ul>
+                <li>{t("experience.items.servicenow.point1")}</li>
+                <li>{t("experience.items.servicenow.point2")}</li>
+              </ul>
+            </div>
+
+            <div className="timeline-center">
+              <div className="timeline-circle"></div>
+            </div>
+
+            <div className="timeline-date">
+              {t("experience.items.servicenow.date")}
+            </div>
+          </div>
+
+          <div className="timeline-row right">
+            <div className="timeline-date">
+              {t("experience.items.webapp.date")}
+            </div>
+
+            <div className="timeline-center">
+              <div className="timeline-circle"></div>
+            </div>
+
+            <div className="timeline-card">
+              <h3>{t("experience.items.webapp.title")}</h3>
+              <h4>{t("experience.items.webapp.place")}</h4>
+              <ul>
+                <li>{t("experience.items.webapp.point1")}</li>
+                <li>{t("experience.items.webapp.point2")}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="timeline-row left">
+            <div className="timeline-card">
+              <h3>{t("experience.items.linux.title")}</h3>
+              <h4>{t("experience.items.linux.place")}</h4>
+              <ul>
+                <li>{t("experience.items.linux.point1")}</li>
+                <li>{t("experience.items.linux.point2")}</li>
+              </ul>
+            </div>
+
+            <div className="timeline-center">
+              <div className="timeline-circle"></div>
+            </div>
+
+            <div className="timeline-date">
+              {t("experience.items.linux.date")}
+            </div>
+          </div>
+
+          
         </div>
       </section>
 
       <section id="contact" className="contact-section">
-        <div className="contact-container">
-          <p className="contact-label">CONTACT</p>
-          <h2 className="contact-title">Travaillons ensemble</h2>
+  <div className="contact-bg-animation">
+    <span className="contact-orb contact-orb-1"></span>
+    <span className="contact-orb contact-orb-2"></span>
+    <span className="contact-orb contact-orb-3"></span>
+  </div>
+
+  <div className="contact-container">
+          <p className="contact-label">{t("contact.label")}</p>
+          <h2 className="contact-title">{t("contact.title")}</h2>
 
           <div className="contact-info">
             <div className="contact-info-item">
@@ -386,25 +610,30 @@ function App() {
 
             <div className="contact-info-item">
               <span className="contact-info-icon">⌖</span>
-              <span>Disponible à distance</span>
+              <span>{t("contact.remote")}</span>
             </div>
           </div>
 
           <form ref={form} onSubmit={sendEmail} className="contact-form">
             <div className="contact-row">
-              <input type="text" name="name" placeholder="Nom" required />
-              <input type="email" name="email" placeholder="Email" required />
+              <input type="text" name="name" placeholder={t("contact.name")} required />
+              <input
+                type="email"
+                name="email"
+                placeholder={t("contact.email")}
+                required
+              />
             </div>
 
             <textarea
               name="message"
-              placeholder="Votre message..."
+              placeholder={t("contact.message")}
               required
             ></textarea>
 
             <button type="submit" className="contact-btn">
               <span>✈</span>
-              Envoyer
+              {t("contact.send")}
             </button>
           </form>
         </div>
